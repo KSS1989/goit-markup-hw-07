@@ -3,42 +3,40 @@
   margin-top: 16px;
   padding-bottom: 30px;
   justify-content: center;
-}
 
-.social-list__item:not(:last-child) {
-  margin-right: 10px;
-}
+  &__item:not(:last-child) {
+    margin-right: 10px;
+  }
 
-.social-list__link {
-  display: flex;
-  width: 44px;
-  height: 44px;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-  border: none;
-  color: $icon-color;
-  background-color: $fon-color;
-  transition: color 250ms $time-animacion,
-    background-color 250ms $time-animacion;
-}
+  &__link {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: none;
+    color: $icon-color;
+    background-color: $fon-color;
+    transition: color 250ms $time-animacion,
+      background-color 250ms $time-animacion;
+    &:focus,
+    &:hover {
+      background-color: $logo-color;
+      color: $fon-color;
+    }
+  }
 
-.social-list__link:focus,
-.social-list__link:hover {
-  background-color: $logo-color;
-  color: $fon-color;
-}
-
-.social-list__icon {
-  width: 20px;
-  height: 20px;
-  fill: currentColor;
-  transition: color 250ms $time-animacion,
-    background-color 250ms $time-animacion;
-}
-
-.social-list__icon:focus,
-.social-list__icon:hover {
-  fill: $fon-color;
-  background-color: $logo-color;
+  &__icon {
+    width: 20px;
+    height: 20px;
+    fill: currentColor;
+    transition: color 250ms $time-animacion,
+      background-color 250ms $time-animacion;
+    &:focus,
+    &:hover {
+      fill: $fon-color;
+      background-color: $logo-color;
+    }
+  }
 }
